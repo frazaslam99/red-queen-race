@@ -97,7 +97,7 @@ useEffect(() => {
     } 
     adjustBackgroundPlayback();
   }, 3000);
-},[])
+},[playbackRateRQ])
 
 
 
