@@ -84,7 +84,8 @@ useEffect(() => {
   foreground1Movement.getAnimation().effect.getTiming().duration / 2;
 
   document.addEventListener("click",()=>{
-    playbackRateRQ *= 1.1;
+    // playbackRateRQ *= 1.1;
+    playbackRateRQ = playbackRateRQ*1.1;
     redQueen_alice_sprite.getAnimation().playbackRate =playbackRateRQ;
     adjustBackgroundPlayback();
   })
@@ -97,7 +98,7 @@ useEffect(() => {
     } 
     adjustBackgroundPlayback();
   }, 3000);
-},[playbackRateRQ])
+},[])
 
 
 
